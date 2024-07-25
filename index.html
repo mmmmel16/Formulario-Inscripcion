@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <h1 id="title">Formulario de inscripción</h1>
+    <p id="descripcion">Complete los campos a continuación con sus datos personales para finalizar su inscripción de manera exitosa.</p>
+   <div class="fila">
+        <div class="columna2">
+            <img src="/img/robot.svg" alt="ilustracion de lukaszadam.com" width="800rem">
+        </div>
+        <div class="columna2">
+            <form action="" id="survey-form">
+                <div class="name">
+                    <label id="name-label">Nombre completo</label>
+                    <input id="name" type="text" placeholder="Ejemplo 'Juanita Barrios'" required>
+                </div>
+                <div class="email">
+                    <label id="email-label">Correo electrónico</label>
+                    <input id="email" type="email" placeholder="Ejemplo 'juanita11@gmail.com'" required>
+                </div>
+                <div class="number">
+                    <label id="number-label">Edad</label>
+                    <input id="number" type="number" placeholder="Número de 18 a 90" min="18" max="90" required>
+                </div>
+                <div class="status">
+                    <label id="status-label">Estado civil</label>
+                    <select name="status" id="dropdown">
+                        <option value="1">Seleccione una opción</option>
+                        <option value="2">Soltero/a</option>
+                        <option value="3">Casado/a</option>
+                        <option value="4">Divorciado/a</option>
+                        <option value="5">Viudo/a</option>
+                    </select>
+                </div>
+                <div class="gender">
+                    <label id="gender-label">Género</label>
+                    <label><input type="radio" name="gender" id="male" value="male"> Hombre</label>
+                    <label><input type="radio" name="gender" id="female" value="female"> Mujer</label>
+                    <label><input type="radio" name="gender" id="other" value="other"> Otro</label>
+                </div>
+                <div class="skills">
+                    <label id="skills-label">Habilidades</label>
+                    <label><input type="checkbox" name="skills" id="html" value="html"> HTML</label>
+                    <label><input type="checkbox" name="skills" id="css" value="css"> CSS</label>
+                    <label><input type="checkbox" name="skills" id="javascript" value="javascript"> JavaScript</label>
+                    <label><input type="checkbox" name="skills" id="react" value="react"> React</label>
+                </div>
+                <div class="comment">
+                    <label id="comment-label">Comentarios adicionales</label>
+                    <textarea id="comments" placeholder="Escribe tus comentarios aquí"></textarea>
+                </div>
+                <div class="button">
+                    <button id="submit" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+   </div>
+</body>
+</html>
